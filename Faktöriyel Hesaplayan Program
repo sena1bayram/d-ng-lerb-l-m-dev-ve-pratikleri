@@ -1,0 +1,43 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh) {
+        int s1,s2,n,r,fark,nfak=1,rfak=1,farkfak=1,fak;
+
+        Scanner input = new Scanner(System.in);
+     /*   System.out.println("faktoriyeli hesaplanacak sayıyı giriniz:");
+        s1=input.nextInt();
+        // faktoriyel
+        for (int i=1;i<=s1;i++)
+        {
+            sonuc*=i;
+        }
+        System.out.println("faktoriyel: "+sonuc);
+
+      */
+        //kombinasyon
+        System.out.println("1. sayıyı giriniz:");
+        n=input.nextInt();
+        System.out.println("2. sayıyı giriniz:");
+        r=input.nextInt();
+        fark=n-r;
+        for (int i=1;i<=n;i++)
+        {
+            nfak*=i;
+        }
+
+        for (int i=1;i<=r;i++)
+        {
+            rfak*=i;
+        }
+        for (int i=1;i<=fark;i++)
+        {
+            farkfak*=i;
+        }
+        fak=nfak / (rfak*farkfak);
+        System.out.println("kombinasyon: "+fak);
+
+    }
+
+}
