@@ -1,1 +1,1 @@
-# d-ng-lerb-l-m-dev-ve-pratikleri
+#döngüler bölümü ödev ve pratikleri
