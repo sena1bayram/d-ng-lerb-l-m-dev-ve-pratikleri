@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh) {
+        int sayi;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("sayi giriniz:");
+        sayi=input.nextInt();
+        for (int i = 1; i <= sayi; i*=4) {
+            System.out.print(i+",");
+        }
+        for (int i = 1; i <= sayi; i*=5) {
+            System.out.print(i+",");
+        }
+
+    }
+
+}
+
+
